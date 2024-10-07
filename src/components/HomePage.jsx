@@ -15,7 +15,7 @@ function HomePage(props) {
         let tempStream
         console.log('start recording')
         try {
-            const streamData = navigator.mediaDevices.getUserMedia({
+            const streamData = await navigator.mediaDevices.getUserMedia({
                 audio: true,
                 video: false
             })
@@ -66,7 +66,7 @@ function HomePage(props) {
     })
 
     return (
-        <main className="flex-1 p-4 flex-col gap-3  text-center sm:gap-4 md:gap-5
+        <main className="flex-1 p-4 flex-col gap-3  text-center sm:gap-4 
      justify-center pb-20">
             <h1 className='font-semibold text-5xl sm:text-6xl md:text-7xl'>Free<span className='text-blue-400 bold'>Scribe</span></h1>
             <h3 className='font-medium text-lg'>

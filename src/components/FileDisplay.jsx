@@ -6,6 +6,7 @@ function FileDisplay(props) {
         <main className="flex-1 
                 p-4
                 flex-col
+                flex
                 gap-3
                 text-center 
                 sm:gap-4
